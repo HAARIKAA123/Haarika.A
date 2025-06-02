@@ -1,0 +1,21 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0){
+            return false;
+        }
+        String str=Integer.toString(x);
+        int n=str.length();
+        String emp="";
+        for(int i=n-1;i>=0;i--){
+            emp=emp+str.charAt(i);
+        }
+        long num=Long.parseLong(emp);
+        int num2=Integer.parseInt(str);
+            if(num==num2){
+                return true;
+            }
+            else{
+                return false;
+            }
+    }
+}
